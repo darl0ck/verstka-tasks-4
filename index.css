@@ -1,0 +1,106 @@
+body {
+    background: navajowhite;
+    font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+div {
+    column-count: 5; /*разбиение текста на колонки*/
+    column-gap: 30px; /*расстояние между колонками */
+    column-rule: 2px solid grey; /*добавление разделения между колонками*/
+    column-width: 50px; /*ширина колонок*/
+    font-style: italic;
+    border-style: solid;
+    border-width: 1px;
+}
+
+p::first-letter {
+    color: mediumseagreen;
+    font-weight: bold;
+}
+
+.title::first-letter {
+    color: red;
+}
+
+#sonytitle::first-letter {
+    color: black;
+    font-size: xx-large;
+}
+
+img {
+    align-content: center;
+    width: 249px;
+    height: 150px;
+}
+
+.globaltitle {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    font-weight: bold;
+    text-emphasis: circle;
+}
+
+.title {
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 5px; /*отступы между буквами*/
+}
+
+.test1 {
+    font-family: cursive; /*тип шрифта */
+    font-size: small; /*размер шрифта */
+    word-spacing: -1px; /*отступы между словами*/
+}
+
+.test2 {
+    font-style: italic; /*наклон*/
+    font-weight: normal; /* обычный (а) */
+    /*bold      жирный (в)  */
+    /*light     тонкий      */
+    text-transform: lowercase; /* либо все буквы мелкие ,либо большие ,либо как у названия песен*/
+    text-shadow: 1px 1px gray; /* change on x  change on y shadow color*/
+    /*::first-line:изменение первой строки текста */
+    /*::first-letter первая буква*/
+}
+
+.pic {
+    column-span: all; /*игнор на разбиение*/
+}
+
+@font-face {
+    font-family: 'Open Sans Condensed'; /* название моего шрифта*/
+    /* .woff — один из популярных форматов веб-шрифтов */
+    src: url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,cyrillic)/*где находится новый шрифт */
+;
+}
+
+@font-face {
+    font-family: 'Indie Flower', cursive;
+    src: url(https://fonts.googleapis.com/css?family=Indie+Flower);
+}
+
+@font-face {
+    font-family: 'Pacifico', cursive;
+    src: url(https://fonts.googleapis.com/css?family=Pacifico) ;
+}
+
+#queen {
+    font-family: fantasy;
+    word-spacing: inherit;
+}
+
+#sony {
+    column-count: 2;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    font-family: 'Pacifico', cursive;
+}
+
+#sonytitle {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    text-decoration: underline;
+}
