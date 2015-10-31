@@ -1,11 +1,13 @@
 body {
-    background: navajowhite;
+    background: #FFDEAD;
     font-family: 'Open Sans Condensed', sans-serif;
 
 }
 
 div {
     column-count: 5; /*разбиение текста на колонки*/
+    -webkit-column-count: 5;
+    -moz-column-count: 5;
     column-gap: 30px; /*расстояние между колонками */
     column-rule: 2px solid grey; /*добавление разделения между колонками*/
     column-width: 50px; /*ширина колонок*/
@@ -13,7 +15,6 @@ div {
     border-style: solid;
     border-width: 1px;
 }
-
 p::first-letter {
     color: mediumseagreen;
     font-weight: bold;
@@ -25,7 +26,7 @@ p::first-letter {
 
 #sonytitle::first-letter {
     color: black;
-    font-size: xx-large;
+    font-size: 20px;
 }
 
 img {
@@ -38,7 +39,6 @@ img {
     font-family: 'Indie Flower', cursive;
     text-align: center;
     font-weight: bold;
-    text-emphasis: circle;
 }
 
 .title {

@@ -1,0 +1,101 @@
+body {
+    background: #ffdead;
+    font-family: cursive;
+
+}
+
+div {
+    column-count: 5;
+    column-gap: 30px;
+    -webkit-column-count: 5;
+    color: #008000;
+    -moz-column-count: 5;
+    column-rule: 2px solid #808080;
+    column-width: 50px;
+    font-style: italic;
+    border-style: solid;
+    border-width: 1px;
+}
+p::first-letter {
+    color: #3cb371;
+    font-weight: bold;
+}
+
+.title::first-letter {
+    color: #ff0000;
+}
+
+#sonytitle::first-letter {
+    color: #000000;
+    font-size: 20px;
+}
+
+img {
+    align-content: center;
+    width: 249px;
+    height: 150px;
+}
+
+.globaltitle {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    font-weight: bold;
+}
+
+.title {
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.test1 {
+    font-family: cursive;
+    font-size: small;
+    word-spacing: -1px;
+}
+
+.test2 {
+    font-style: italic;
+    font-weight: normal;
+    text-transform: lowercase;
+    text-shadow: 1px 1px #808080;
+}
+
+.pic {
+    column-span: all;
+}
+
+@font-face {
+    font-family: 'Open Sans Condensed'; /
+    src: url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,cyrillic);
+}
+
+@font-face {
+    font-family: 'Indie Flower', cursive;
+    src: url(https://fonts.googleapis.com/css?family=Indie+Flower);
+}
+
+@font-face {
+    font-family: 'Pacifico', cursive;
+    src: url(https://fonts.googleapis.com/css?family=Pacifico) ;
+}
+
+#queen {
+    font-family: fantasy;
+    word-spacing: inherit;
+}
+
+#sony {
+    column-count: 2;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    font-family: 'Pacifico', cursive;
+}
+
+#sonytitle {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    text-decoration: underline;
+}
